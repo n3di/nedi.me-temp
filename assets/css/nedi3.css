@@ -1,0 +1,176 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+#snow{
+    background: none;
+    font-family: Androgyne;
+    background-image: url('/assets/image/corndog-tile-1.png'), url('/assets/image/corndog-tile.png'), url('/assets/image/corndog-tile-2.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+	opacity: 20%;
+    z-index: -1;
+    -webkit-animation: snow 1000s linear infinite;
+    -moz-animation: snow 1000s linear infinite;
+    -ms-animation: snow 1000s linear infinite;
+    animation: snow 1000s linear infinite;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+}   
+
+html {
+    font-size: 16px;
+    font-family: Inter;
+}
+
+body {
+    font-family: inherit;
+    height: 100vh;
+    background-color: var(--black);
+}
+
+a {
+    color: var(--pink);
+    text-decoration: none;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+}
+
+.vh100 {
+    height: 100vh;
+}
+
+.logo {
+    margin-left: .75rem;
+}
+
+.social:not(:nth-child(1)) {
+    margin-right: .75rem;
+}
+
+.discord:hover {
+    color: rgba(88,101,242)
+}
+
+.twitter:hover {
+    color: rgba(29,161,242)
+}
+
+.transition {
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+
+.social:not(:nth-child(2)) {
+    margin-right: .5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-items {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.text-pink {
+    color: var(--pink);
+}
+
+.text-pink-2 {
+    color: var(--pink-2);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-size {
+    font-size: 3.75rem;
+}
+
+.text-size-2 {
+    font-size: 1.25rem;
+}
+
+button {
+    font-size: .875rem;
+    padding: .5rem .74rem;
+    border-width: 2px;
+    border-color: var(--pink);
+    border-style: solid;
+    border-radius: .375rem;
+    background-color: var(--black);
+    box-shadow: 0 0 10px 2px rgba(51,51,51,0.6980392156862745);
+    margin-top: 32px;
+    font-weight: 700;
+}
+
+[role=button], button {
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--black);
+    background-color: var(--pink);
+}
+
+::selection {
+    background-color: var(--pink);
+    color: var(--black);
+}
+
+:root {
+    --black: rgb(0,0,0);
+    --pink: rgb(255, 90, 219);
+    --pink-2: rgb(255,134,228)
+}
